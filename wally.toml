@@ -1,15 +1,18 @@
 [package]
-name = "nightcycle/package"
+name = "nightcycle/sky-service"
 description = "A package!"
 version = "1.0.0"
-authors = ["CJ Oyer <coyer@nightcycle.us>"]
+authors = [ "CJ Oyer <coyer@nightcycle.us>",]
 realm = "shared"
 registry = "https://github.com/upliftgames/wally-index"
-exclude = ["Packages", ".vscode"]
+exclude = [ "Packages", ".vscode",]
 
 [dependencies]
-ColdFusion = "nightcycle/cold-fusion@4.1.26"
-Math = "nightcycle/luau-math@1.3.1"
-Draw = "nightcycle/draw@^1.0.5"
-Signal = "nightcycle/signal@^1.0.2"
-Maid = "nightcycle/maid@^1.0.4"
+ColdFusion = "nightcycle/cold-fusion@7.0.1"
+GeometryUtil = "nightcycle/geometry-util@1.1.1"
+Maid = "nightcycle/maid@1.1.4"
+PhysicsUtil = "nightcycle/physics-util@1.3.0"
+ServiceProxy = "nightcycle/service-proxy@1.0.0"
+Signal = "nightcycle/signal@1.0.2"
+CurveUtil = "nightcycle/curve-util@1.0.0"
+InstancePool = "nightcycle/instance-pool@1.0.0"
