@@ -5,14 +5,11 @@ local Packages = Package.Parent
 -- Services
 local RunService = game:GetService("RunService")
 local SoundService = game:GetService("SoundService")
-local Lighting = game:GetService("Lighting")
 
 -- Packages
 local Maid = require(Packages:WaitForChild("Maid"))
 local Signal = require(Packages:WaitForChild("Signal"))
 local ColdFusion = require(Packages:WaitForChild("ColdFusion"))
-local PhysicsUtil = require(Packages:WaitForChild("PhysicsUtil"))
-local CurveUtil = require(Packages:WaitForChild("CurveUtil"))
 local GeometryUtil = require(Packages:WaitForChild("GeometryUtil"))
 local ServiceProxy = require(Packages:WaitForChild("ServiceProxy"))
 local InstancePool = require(Packages:WaitForChild("InstancePool"))
