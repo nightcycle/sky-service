@@ -415,7 +415,9 @@ function SkyService.new(): SkyService
 	_bind(game:GetService("Lighting") :: Lighting)({
 		ClockTime = ClockTime,
 		OutdoorAmbient = Ambient,
-		Brightness = AtmosphereData:Read("Brightness"):Multiply(Brightness :: any):Add(2.5 :: any),
+		Brightness = _Computed(function(data: AtmosphereData, brightness: number): number
+			return data.Brightness * brightness + 2.5
+		end, AtmosphereData, Brightness),
 		ColorShift_Top = Ambient,
 	})
 
