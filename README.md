@@ -9,7 +9,6 @@ SkyService.new()
 After this is called it should be usable just by requiring the package anywhere.
 
 ## configuration
-
 ### ceiling detection
 To determine whether to render precipitation it will shoot raycasts upwards from your position to try and find a ceiling.
 ```lua
